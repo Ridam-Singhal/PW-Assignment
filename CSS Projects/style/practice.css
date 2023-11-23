@@ -1,0 +1,127 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    /* align-content: space-evenly; */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #c9c8c4;
+    background-image: url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #d8d4d4;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #fff;
+}
+
+button {
+    background-color: #129b9b;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+nav {
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+nav .logo-text {
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 11px;
+}
+
+.logo-image img{
+    border-radius: 25%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav ul li:hover {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.search-box {
+    display: flex;
+    gap: 15px;
+}
+
+input {
+    padding: 4px 10px;
+    border-radius: 7px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section h1 {
+    font-size: 40px;
+    /* color: #fff; */
+    margin-bottom: 30px;
+}
+
+.main-section p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btns {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}

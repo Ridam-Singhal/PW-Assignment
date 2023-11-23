@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("https://github.com/pwlive/fullstackwebdevelopment/blob/main/Assignment_03(HTML+CSS)/assets/bg.png?raw=true");
+    background-size: 1400px 700px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.slash {
+    font-size: 50px;
+    color: #bebcbc;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 70px;
+    margin-right: 250px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+button.btns {
+    margin-top: 15px;
+    padding: 8px 19px;
+    width: 9%;
+    height: 5%;
+    border-radius: 7px;
+    background-color: #d029f1;
+    color: #fff;
+    font-weight: 700;
+}
+
+button.btns:hover {
+    background-color: #fff;
+    color: #d029f1;
+    border: 2px solid #d029f1;
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main h1 {
+    font-size: 60px;
+}
+
+main p {
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+button.btns2 {
+    padding: 8px 10px;
+    margin-top: 60px;
+    border-radius: 7px;
+    background-color: #d029f1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+button.btns2:hover {
+    background-color: #fff;
+    color: #d029f1;
+    border: 2px solid #d029f1;
+}

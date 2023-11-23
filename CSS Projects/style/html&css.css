@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://github.com/pwlive/fullstackwebdevelopment/blob/main/Assignment_01(HTML+CSS)/assets/pexels-maxyne-barcel-10402282%201.png?raw=true");
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 60px;
+    color: #ffc700;
+    font-size: 18px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffc700;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.btns {
+    width: 8%;
+    height: 9%;
+    padding: 10px 10px;
+    background-color: #f65009;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.btns:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #f65009;
+    border: 2px solid #f65009;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ffc700;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btns2 {
+    margin-top: 25px;
+    padding: 20px 50px;
+    background-color: #f65009;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.btns2:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #f65009;
+    border: 2px solid #f65009;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+}

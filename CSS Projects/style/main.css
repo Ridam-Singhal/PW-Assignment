@@ -1,0 +1,147 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ede9e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #129b9b;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ede9e3;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+nav {
+    padding-top: 25px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .Logo {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.search-box {
+    display: flex;
+    gap: 35px;
+}
+
+input{
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+}
+
+.main-section-left h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.main-section-left h1 span {
+    color: #129b9b;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.main-section-left p {
+    font-weight: 500;
+}
+
+.main-section-left p span {
+    font-weight: 700;
+    font-size: 25px;
+    color: #129b9b;
+}
+
+.main-section-right {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section-right-btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-section-right img {
+    height: 200px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+footer ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 25px;
+}
+

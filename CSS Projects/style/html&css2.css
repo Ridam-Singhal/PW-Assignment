@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+button.btns {
+    padding: 8px 18px;
+    background-color: #601aec;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+button.btns:hover {
+    background-color: #fff;
+    color: #601aec;
+    border: 2px solid #601aec;
+    cursor: pointer;
+}
+
+.main-section {
+    display: flex;
+}
+
+.left-section {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section h1 {
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+span {
+    color: #601aec;
+}
+
+.left-section p {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.right-section img {
+    width: 650px;
+    height: 500px;
+}
+
+button.btns2 {
+    margin-top: 60px;
+    margin-right: 130px;
+    padding: 8px 18px;
+    background-color: #601aec;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+button.btns2:hover {
+    background-color: #fff;
+    color: #601aec;
+    border: 2px solid #601aec;
+    cursor: pointer;
+}

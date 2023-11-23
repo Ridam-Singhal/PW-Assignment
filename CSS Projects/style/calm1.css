@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e8ecbc;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calm-slogan {
+    margin-right: 40px;
+    width: 40%;
+}
+
+.calm-slogan h1 {
+    font-size: 45px;
+}
+
+.calm-slogan p {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 10px;
+    margin-top: 20px;
+    background-color: #3b855b;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+
+.right-section div img {
+    gap: 20px;
+}
+
