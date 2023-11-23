@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  border: 2px solid #000;
+  padding: 7px 25px;
+}
+
+.clickme {
+  font-size: 25px;
+}

@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>DOM</title>
+    <script>
+      window.onload = () => {
+        const heading = document.createElement("h1");
+        const headingText = document.createTextNode(
+          "Hello just created my DOM Project using window.onload function"
+        );
+        heading.appendChild(headingText);
+        document.body.appendChild(heading);
+      };
+    </script>
+  </head>
+</html>

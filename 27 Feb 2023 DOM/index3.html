@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="body">
+    <!-- Normal HTML  -->
+    <h1>Hello Everyone - This is PW Skills</h1>
+    <p id="para"></p>
+    <button onclick="hey()" id="jss">Submit</button>
+    <script>
+      document.addEventListener("click", hello);
+
+      function hello() {
+        document.getElementById("para").innerText = "Jai Mata Di";
+        document.getElementById("para").style.fontSize = "25px";
+        document.getElementById("para").style.border = "2px solid black";
+        document.getElementById("para").style.padding = "16px";
+        document.getElementById("para").style.color = "#fff";
+        document.getElementById("para").style.backgroundColor = "#000";
+      }
+
+      function hey() {
+        document.getElementById("jss").innerText = "Namaste";
+        document.getElementById("jss").style.backgroundColor = "#000";
+        document.getElementById("jss").style.color = "#fff";
+        document.getElementById("jss").style.padding = "17px";
+      }
+    </script>
+  </body>
+</html>

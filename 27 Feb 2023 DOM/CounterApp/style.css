@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.operations {
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.decrease {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border: 2px solid #000;
+}
+
+.increase {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border: 2px solid #000;
+}
+
+.numberMeter {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border: 2px solid #000;
+}
+
+.reset {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border: 2px solid #000;
+}
+
+.changeValue {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #cccccc;
+  border: 2px solid #000;
+}

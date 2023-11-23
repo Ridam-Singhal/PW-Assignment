@@ -1,0 +1,50 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.operations {
+  display: flex;
+  gap: 4px;
+}
+
+#decrease {
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #cccccc;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+#increase {
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #cccccc;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+#numberMeter {
+  width: 40px;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #cccccc;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+#reset {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 2px solid grey;
+  background-color: #cccccc;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 20px;
+}
