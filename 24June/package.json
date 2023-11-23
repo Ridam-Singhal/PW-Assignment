@@ -1,0 +1,17 @@
+{
+  "name": "specialclass",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "24June.js",
+  "scripts": {
+    "start": "node ./src/24June.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}

@@ -1,71 +1,66 @@
 const User = require("../models/userModel.js");
 
 exports.home = (req, res) => {
-  res.send("Hello World using controllers");
+  res.send("Hello World ! Controllers");
 };
 
-exports.register = async (req, res) => {
+exports.createUser = async (req, res) => {
+  // extract info
   try {
-    const { name, email, password } = req.body;
+    // request parameter comes with so many values in it
+    const { name, email, gender, DOB } = req.body;
 
-    if (!name || !email) throw new Error("name and email is required");
-
-    if (!password || password < 8) {
-      throw new Error(
-        "password is required and it should not be less than 8 characters"
-      );
+    if (!name || !email) {
+      throw new Error("Name and Email are required");
     }
 
-    const userExists = await User.findOne({ email });
+    if (!gender) throw new Error("gender is required");
 
-    if (userExists) {
+    if (!DOB) throw new Error("DOB is required");
+
+    const userexists = await User.findOne({ email: email });
+
+    if (userexists) {
       throw new Error("User already exists");
     }
 
-    if (email.includes("@")) {
-      const user = await User.create({
-        name,
-        email,
-        password,
-      });
-    } else {
-      throw new Error("@ is required");
-    }
+    // check @
 
-    res.status(200).json({
-      message: "User registered successfully",
+    const user = await User.create({
+      name,
+      email,
+      gender,
+      DOB,
+    });
+
+    res.status(201).json({
+      success: true,
+      message: "User created successfully",
+      user,
     });
   } catch (error) {
     console.log(error);
-    res.status(401).json({
+    res.status(400).json({
+      success: false,
       message: error.message,
     });
   }
 };
 
-exports.login = async (req, res) => {
+exports.getUsers = async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const users = await User.find({});
 
-    const userData = await User.findOne({ email });
+    // users array length is zero check
 
-    if (!userData) {
-      res.status(401).json({
-        message: "No account associated with this email",
-      });
-    }
-
-    if (!(userData.password == password)) {
-      res.status(401).json({
-        message: "Password is wrong",
-      });
-    }
     res.status(200).json({
-      message: "User login successfully",
+      success: true,
+      users,
     });
   } catch (error) {
     console.log(error);
-    res.status(401).json({
+    res.status(400).json({
+      success: false,
       message: error.message,
     });
   }
@@ -73,29 +68,32 @@ exports.login = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
   try {
-    const user = await User.findByIdAndDelete(req.params.id);
-
+    const userId = req.params.id;
+    const user = await User.findByIdAndDelete(userId);
     res.status(200).json({
+      success: true,
       message: "User deleted successfully",
     });
   } catch (error) {
     console.log(error);
-    res.status(401).json({
+    res.status(400).json({
+      success: false,
       message: error.message,
     });
   }
 };
 
-exports.updateUser = async (req, res) => {
+exports.editUser = async (req, res) => {
   try {
     const user = await User.findByIdAndUpdate(req.params.id, req.body);
-
     res.status(200).json({
+      success: true,
       message: "User updated successfully",
     });
   } catch (error) {
     console.log(error);
-    res.status(401).json({
+    res.status(400).json({
+      success: false,
       message: error.message,
     });
   }
