@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting Text Content</title>
+    <!-- CSS -->
+    <style>
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+      #story {
+        width: 30rem;
+        height: 3rem;
+        text-align: center;
+        font-size: 1.5rem;
+      }
+      button {
+        font-size: 1.2rem;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <!-- body  -->
+    <div class="container">
+      <!-- Textarea  -->
+      <textarea id="story"></textarea>
+
+      <!-- Button  -->
+      <button id="set-text" type="button">Set text content</button>
+
+      <button id="clear-text" type="button">Clear text content</button>
+
+      <button id="change-story" type="button">Change Story</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      const story = document.querySelector("#story");
+
+      // Setting Text Content
+      const setTExt = document.querySelector("#set-text");
+      setTExt.addEventListener("click", () => {
+        story.textContent = "This is a story time";
+      });
+
+      // Clearing Text Content
+      const clearTExt = document.querySelector("#clear-text");
+      clearTExt.addEventListener("click", () => {
+        story.textContent = "";
+      });
+
+      // Changing Text Content
+      const changingTExt = document.querySelector("#change-story");
+      changingTExt.addEventListener("click", () => {
+        story.textContent = prompt("Enter the story you want");
+      });
+    </script>
+  </body>
+</html>

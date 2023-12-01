@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Header</title>
+  </head>
+  <body>
+    <input type="button" value="Change this document" id="btn" />
+
+    <h2>Header</h2>
+    <p>This is document</p>
+
+    <!-- JavaScript -->
+    <script>
+      const btn = document.querySelector("#btn");
+
+      btn.addEventListener("click", change)
+      
+      function change() {
+        const header = document.getElementsByTagName("h2").item(0);
+        header.firstChild.data = "A dynamic document";
+
+        const para = document.getElementsByTagName("p").item(0);
+        para.firstChild.data = "This is a first paragraph";
+
+        const newText = document.createTextNode("This is second paragraph");
+        const para2 = document.createElement("p");
+        para2.appendChild(newText);
+
+        para.parentNode.appendChild(para2);
+      }
+    </script>
+  </body>
+</html>

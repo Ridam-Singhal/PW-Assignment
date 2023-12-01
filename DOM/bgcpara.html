@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Colour</title>
+    <!-- CSS -->
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+      }
+      #input {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- body -->
+    <input type="button" value="Change BGC" id="input" />
+
+    <!-- Paragraphs -->
+    <p>Hi</p>
+    <p>Hello</p>
+
+    <!-- JavaScript -->
+    <script>
+      const input = document.querySelector("#input");
+
+      input.addEventListener("click", setBackground);
+
+      // setBackground function
+      function setBackground() {
+        const para = document.getElementsByTagName("p");
+
+        const secondpara = para[1];
+        secondpara.style.background = "red";
+        secondpara.innerText = "Changed InnerText using JavaScript";
+      }
+    </script>
+  </body>
+</html>
